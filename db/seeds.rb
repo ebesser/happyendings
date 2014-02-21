@@ -26,6 +26,8 @@ def populate_db
 
   continents = ["oceania", "africa", "asia", "europe", "north_america", "south_america"]
 
+  valid_map_ids = [36, 554, 818, 12, 504, 434, 710, 566, 288, 156, 360, 392, 458, 608, 764, 704, 410, 792, 368, 760, 376, 275, 422, 51, 356, 586, 364, 4, 398, 276, 250, 528, 56, 40, 756, 826, 752, 208, 578, 246, 372, 352, 380, 724, 300, 643, 804, 616,  642, 203, 348, 840, 124, 484, 76, 32, 604, 862, 152, 170]
+
   continents.each do |continent|
   results = HTTParty.get("http://www.pornmd.com/geosearches?continent=" + continent)
 
@@ -44,6 +46,9 @@ def populate_db
   new_entry = Country.new
   new_entry[:name] = result[0]
   new_entry[:searches] = result[1].join(",")
+    valid_map_ids.each do |id|
+      new_entry[:map_id] = id
+    end
   new_entry.save
   end
   end

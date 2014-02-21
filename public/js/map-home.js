@@ -55,27 +55,18 @@ queue()
   .defer(d3.json, '/world-countries.json')
   .await(ready);
 
-// var moonman_left_margin = parseInt( (width - 900) / 2 );
-// $('#moon-man').css('left', moonman_left_margin + 'px').css('top', '40px');
-
-
-
-// function redraw() {
-//     g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+// function antiGrav(ele) { 
+//   var distance = 12;
+//   $(ele).animate({
+//     'top': "+=" + distance + "px"
+//   },800,"swing",function(){
+//     $(ele).animate({        
+//             'top': "-=" + distance + "px"
+//     },800,"swing",function(){
+//       antiGrav(ele);
+//         });
+//   });
 // }
-
-function antiGrav(ele) { 
-  var distance = 12;
-  $(ele).animate({
-    'top': "+=" + distance + "px"
-  },800,"swing",function(){
-    $(ele).animate({        
-            'top': "-=" + distance + "px"
-    },800,"swing",function(){
-      antiGrav(ele);
-        });
-  });
-}
 
 
 function countryHover(d) {
