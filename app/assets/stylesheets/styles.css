@@ -1,0 +1,543 @@
+
+body {
+  background: url('/stardust.png');
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.circles-wrp {
+  width: 100%;
+}
+
+
+h1 {
+  margin-top: 0;
+}
+
+h1.country-name {
+  font-size: 62px;
+  color: #fff;
+  margin-bottom: 30px;
+  border-bottom:1px solid #424242;
+  padding-bottom: 6px;
+}
+
+h1.country-name a, h2.country-name, h2.category-title {
+  color: #fff;
+}
+
+h2.category-title {
+  margin: 15px 0;
+}
+
+h3.circles-intro {
+  color: #fff;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+#circles-holder-unique {
+  color: #fff;
+  position: absolute;
+  top:0;
+  right: 30px;
+  width:300px;
+}
+
+#unique {
+  width: 100%;
+  margin-top:9px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px; height: 0; overflow: hidden; margin-left: 80px;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 92%;
+}
+
+.country-flag {
+  height: 47px;
+  margin-left: 15px;
+}
+
+a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+svg {
+  width: 100%;
+}
+
+/*#star-background {
+  width: 700px;
+  height:600px;
+  position: absolute;
+  z-index: 999999;
+  pointer-events: none;
+  background: url('/stardust.png');
+}*/
+
+a:hover {
+  text-decoration: underline;
+}
+
+#map-canvas {
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+/*#television {
+  width: 980px;
+  height:653px;
+  margin: 0 auto;
+  position: absolute;
+  background: url('/oldschooltv.png');
+  z-index: 999999;
+  pointer-events: none;
+}*/
+
+#main-container {
+  width: 100%;
+/*  margin: 0 auto;*/
+  margin-top: 0px;
+}
+
+.moon-man {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+#left-rotator {
+  float: left;
+  width: 30px;
+  margin-top: 270px;
+}
+
+#right-rotator {
+  float: right;
+  width: 30px;
+  margin-top: 270px;
+}
+
+#right-rotator img, #left-rotator img {
+  width: 25px;
+}
+
+#right-rotator:hover, #left-rotator:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.close-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.embed-video-hovertip {
+  line-height: 14px;
+}
+
+.embed-video-hovertip img{
+border: 1px solid #585858;
+}
+
+.embed-video-hovertip img:hover{
+  cursor: pointer;
+  border: 1px solid #ff0000;
+}
+
+.close-me-embed-video {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: red;
+}
+
+.close-me:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.close-me-embed-video:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.stroke {
+  fill: none;
+  /*stroke: #000;*/
+ /* stroke-width: 3px;*/
+}
+
+.fill {
+  fill: #fcfcfa;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+
+.graticule {
+  display:none;
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.circle-thing {
+  text-align: center;
+  margin: 0 10px;
+}
+.land {
+  fill: #f7f7f7;
+}
+
+/*ul.box-videos li {
+  margin: 10px 0;
+  font-size: 14px;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  height: 60px;
+}*/
+
+h1 a {
+  color: #fff;
+}
+
+ul.box-videos {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.hover-thumbnail {
+  font-size:11px;
+}
+
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+}
+
+.hovertip-div {
+  width: 120px;
+  float:left;
+  margin: 0px 5px;
+  font-size:11px;
+  height:150px;
+  line-height: 13px;
+}
+
+.hovertip-country-flag {
+  margin-bottom: -5px;
+  height: 36px;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+
+#hovertip-country-name {
+  display: inline;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+
+.feature.active {
+  fill: orange;
+}
+
+.country .active {
+  fill: orange;
+}
+
+.country {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .1px;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+
+.hidden { 
+  display: none; 
+}
+
+h3 {
+  margin: 5px 0;
+}
+
+iframe {
+  float: left;
+  border: none;
+}
+
+iframe.click_page_embed_url {
+  position: absolute;
+  right: -1px;
+  top: 38px;
+}
+
+.close-embed-video {
+  position: absolute;
+  color: red;
+  bottom: 6px;
+  left: 320px;
+}
+
+a.flex-prev {
+  background: url('/assets/images/arrow-left.png');
+}
+
+.tooltip, .embed_window {
+  color: #fff; 
+  background: #000; 
+  padding: 20px;
+  width: 80%;
+  height: 630px;
+  overflow: auto;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #888;
+}
+
+#sorry.tooltip {
+  color: #fff; 
+  background: #000; 
+  font-size: 22px;
+  padding: 20px;
+  width: 50%;
+  height: 25px;
+  overflow: auto;
+  text-align:center;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #888;
+}
+
+.hovertip {
+  color: #fff; 
+  background: #000; 
+  padding: 10px;
+  width: 410px;
+  height: 150px;
+  overflow: auto;
+  border-radius: 4px; 
+  position: absolute;
+  overflow:hidden;
+  box-shadow: 0 0 5px #888;
+}
+
+.hovertip_videos_container {
+  overflow: auto;
+  margin: 0 auto;
+  width: 390px;
+}
+
+.hovertip h2 {
+  margin:5px 0;
+  padding-left: 12px;
+}
+
+/*.flexslider  {
+     .flex-direction-nav a {
+          display: block;
+     }
+     &:hover {
+          .next {
+               opacity: 1;
+               right: 10px;
+          }
+          .prev {
+               opacity: 1;
+               left: 10px;
+          }
+     }
+     .next {
+          font-size: 1px;
+          &:before {
+               display: inline-block;
+               color: orange;
+               font-size: 30px;
+               padding-left: 10px;
+          }
+     }
+     .prev {
+          font-size: 1px;
+          &:before {
+               display: inline-block;
+               color: orange;
+               font-size: 30px;
+               padding-left: 10px;
+          }
+     }
+     .flex-direction-nav a {
+          width: 30px;
+          height: 30px;
+          overflow: hidden;
+          margin: 0;
+          display: block;
+          background: none;
+          position: absolute;
+          top: 90%;
+          z-index: 10;
+          cursor: pointer;
+          text-indent: inherit;
+          opacity: 1;
+          -webkit-transition: all .3s ease;
+     }
+}*/
+
+#news-videos img {
+  float: left;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+.circles-text-wrp {
+  overflow: hidden;
+  font-size: 22.5px !important;
+  text-shadow: 2px 2px 2px black;
+  text-align: left !important;
+  text-indent: 20px;
+  text-align:center;
+}
+
+span.circles-text {
+  width: 220px !important;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+#arrows-div {left: 0;}
+
+#right-arrow:hover, #left-arrow:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#right-arrow:active, #left-arrow:active {
+  position:relative;
+  top: 2px;
+}
+
+#arrows-div {
+  overflow:hidden;
+  width: 800px;
+  margin:0 auto;
+  position:absolute;
+  top:350px;
+  pointer-events: none;
+}
+
+#white_thingy {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  height: 60px;
+  width: 300px;
+  background:url('/tag.png');
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: right;
+}
+
+#white-thingy-inside {
+  padding-right: 80px;
+  padding-top: 15px;
+}
+
+#explanatory_text_container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 325px;
+  line-height: 26px;
+}
+
+#explanatory_text{
+  color: white;
+  font-size: 20px;
+}
+
+#atlas {
+  float:right;
+  color: white;
+  padding-right: 60px;
+  padding-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#moon-man {
+  overflow:hidden;
+  width: 65px;
+  margin:0 auto;
+  position:absolute;
+  top: 20px;
+  left:25px;
+}
+
+#moon-man img {
+  width: 65px;
+}
+
+#arrows-div img {
+  width: 80px;
+}
+
+#left-arrow {
+  float:left;
+   opacity:.7;
+   pointer-events: all;
+}
+
+#right-arrow {
+  float:right;
+   opacity:.7;
+   pointer-events:all;
+}

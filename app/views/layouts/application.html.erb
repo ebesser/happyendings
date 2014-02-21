@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WdiProject2</title>
+  
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+
+  <script src='/js/d3js.org.d3.v3.min.js'></script>
+  <script src='/js/d3js.org.topojson.v1.min.js'></script>
+  <script src='/js/queue.js'></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src='/js/jquery.flexslider.js'></script>
+  <script src='/js/circles.js'></script>
+  <script src='/js/map-home.js'></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+</html>
