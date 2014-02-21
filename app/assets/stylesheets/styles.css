@@ -5,6 +5,12 @@ body {
   margin: 0;
 }
 
+div#private-eye-icon{
+    
+  content:url("/spy-eye-400x441.png");
+z-index: 15;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Droid Sans', sans-serif;
 }
