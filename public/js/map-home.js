@@ -94,7 +94,7 @@ queue()
 
 function countryHover(d) {
   d3.select('path#id_' + d.id).style('fill', 
-countryfloatover
+CountryFloatOverColor
     );
   if (valid_map_ids.indexOf(d.id) != -1) {
   $tooltip = $('.tooltip');
