@@ -1,6 +1,7 @@
 
 body {
-  background: url('/stardust.png');
+  background: url('/blackpaisley_b.gif');
+  background-size: 15%;
   font-family: 'Droid Sans', sans-serif;
   margin: 0;
 }
@@ -283,8 +284,8 @@ ul.box-videos {
 
 .country {
   fill: #ccc;
-  stroke: #fff;
-  stroke-width: .1px;
+ stroke: #555;
+  stroke-width: 1.5px;
   stroke-linejoin: round;
   cursor: pointer;
 }
