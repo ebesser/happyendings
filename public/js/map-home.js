@@ -2,6 +2,28 @@
 var countries_object; 
 var valid_map_ids = [36, 554, 818, 12, 504, 434, 710, 566, 288, 156, 360, 392, 458, 608, 764, 704, 410, 792, 368, 760, 376, 275, 422, 51, 356, 586, 364, 4, 398, 276, 250, 528, 56, 40, 756, 826, 752, 208, 578, 246, 372, 352, 380, 724, 300, 643, 804, 616,  642, 203, 348, 840, 124, 484, 76, 32, 604, 862, 152, 170];
 
+
+var CountryFloatOverColor = '#011';
+
+//SDF The following used to be '#16a085'
+var CountriesWithDataFloatResetColor = "#800";
+
+//SDF Used to be: '#16a085'
+var countriesWithDataStartingColor = '#800';
+
+// SDF Used to be: '#95a5a6'
+var CountryNoData = '#222';
+
+// SDF USed to be: '#95a5a6'
+var CountryNoDataHoverOffColor = "#222";
+
+// SDF Used to be #bee9f5
+var OceanColor = '#000';
+
+
+
+
+
 var width = parseInt(d3.select('body').style('width')),
     height = 800,
     sens = 0.9,
@@ -10,7 +32,7 @@ var width = parseInt(d3.select('body').style('width')),
 
 var projection = d3.geo.orthographic()
   .translate([width / 2, height / 2])
-  .scale(300)
+  .scale(450)
   .precision(.1)
   .clipAngle(90)
 
@@ -33,7 +55,7 @@ var g = svg.append('g');
 g.append("path")
   .datum({ type: "Sphere" })
   .attr("class", "globewater")
-  .style('fill', '#BEE9F5')
+  .style('fill', OceanColor)
   .style('cursor', 'move')
   .attr("d", path);
 
@@ -71,7 +93,9 @@ queue()
 
 
 function countryHover(d) {
-  d3.select('path#id_' + d.id).style('fill', '#d35400');
+  d3.select('path#id_' + d.id).style('fill', 
+countryfloatover
+    );
   if (valid_map_ids.indexOf(d.id) != -1) {
   $tooltip = $('.tooltip');
     var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
@@ -172,16 +196,16 @@ function ready(error, collection) {
     .attr('id', function(d){
         return 'id_' + d.id
     })
-    .style('fill', '#95a5a6')
+    .style('fill', CountryNoData)
       
     .on("mouseover", countryHover)
 
     .on('mouseout', function(d){
       if (valid_map_ids.indexOf(d.id) != -1) {
-        d3.select('path#id_' + d.id).style('fill', '#16a085')
+        d3.select('path#id_' + d.id).style('fill', CountriesWithDataFloatResetColor)
       } 
       else {
-        d3.select('path#id_' + d.id).style('fill', '#95a5a6')
+        d3.select('path#id_' + d.id).style('fill', CountryNoDataHoverOffColor)
       }
     
       var isHoverTipHovered = $('.hovertip').is(":hover");
@@ -409,7 +433,7 @@ function ready(error, collection) {
   }
 
   htmlFailGen = function () {
-    var contents = 'Sorry, there is no YouTube data for this country';
+    var contents = 'Sorry, there is no data for this country';
     contents += '<div class="close-me"><img src="/cancel-new.png" /></div>'
     $('.tooltip').attr('id', 'sorry')
 
@@ -464,7 +488,7 @@ function ready(error, collection) {
 
   valid_map_ids.forEach(function (x) {
     d3.select('path#id_' + x)
-      .style('fill', '#16a085')
+      .style('fill', countriesWithDataStartingColor)
       .style('cursor', 'pointer')
   });
 
