@@ -1,0 +1,183 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (71.1ms)[0m  DELETE FROM "countries"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (51.2ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/au.png"], ["map_id", 36], ["name", "australia"], ["searches", "asian,teen,massage,milf,compilation,hentai,lesbian,anal,creampie,amateur"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 554], ["name", "new_zealand"], ["searches", "teen,hentai,new zealand,milf,lesbian,massage,indian,asian,squirt,korean"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/eg.png"], ["map_id", 818], ["name", "egypt"], ["searches", "arab,egypt,mom,arab sex,arabic,egyptian,indian,mother,lisa ann,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/dz.png"], ["map_id", 12], ["name", "algeria"], ["searches", "arab,algerian,sister,alger,hijab,big ass,algerie,anal,algerienne,arabe"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ma.png"], ["map_id", 504], ["name", "morocco"], ["searches", "arab,maroc,anorexic,hijab,morocco,arabe,arab sex,mature anal,sister,interracial anal"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 434], ["name", "libya"], ["searches", "arab,big asian breast,american anal sluts,nun,free porn video,sara jay,desiree barclay,video,mom,granny"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/za.png"], ["map_id", 710], ["name", "south_africa"], ["searches", "mature,anthea son casting,emo,muslim girl blow job,photo shoot,forced,beautiful,south africa,black teen,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 566], ["name", "nigeria"], ["searches", "indian sex,mandingo,ebony,african teen,anal,young girl passes out on the couch,naijaporntube,gigantic ass,casting,shy casting"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/gh.png"], ["map_id", 288], ["name", "ghana"], ["searches", "brazzers,black lesbian,crazyoldmoms.com,black bbw,nurse,black,mapouka cote d ivoire,black lesbians,blackonblackcrime com,black teen"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 156], ["name", "china"], ["searches", "japanese,chinese,asian,japan,china,korean,japanese girl,hentai,japanese wife,mom"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/id.png"], ["map_id", 360], ["name", "indonesia"], ["searches", "indonesia,japanese,indonesian,asian,maria ozawa,japan,sora aoi,teen,mom,virgin"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/jp.png"], ["map_id", 392], ["name", "japan"], ["searches", "japanese,japan,japanese wife,hentai,japanese mature,japanese teen,asian,japanese milf,anime,japanese massage"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/my.png"], ["map_id", 458], ["name", "malaysia"], ["searches", "malay,melayu,japanese,malaysian,malaysia,asian,rape,chinese,massage,tudung"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ph.png"], ["map_id", 608], ["name", "philippines"], ["searches", "pinay,pinoy,filipina,hentai,pinay scandal,teen,asian,manila,japanese,filipino"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 764], ["name", "thailand"], ["searches", "thai,japanese,japan,thailand,asian,korean,teen,sora aoi,thai teen,korea"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 704], ["name", "vietnam"], ["searches", "asian,viet nam,vietnam,japanese,japan,taiwan,squirting,maria ozawa,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/kr.png"], ["map_id", 410], ["name", "korea"], ["searches", "korean,lisa ann,korea,asian,stoya,azusa,sora,chinese,holly halston,oh hyun kyung"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/tr.png"], ["map_id", 792], ["name", "turkey"], ["searches", "turkish,mom,teen,turk,anal,mature,amateur,turkish porn,sister,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 368], ["name", "iraq"], ["searches", "arab,iraq,kurdish sex,pain,classic forced sex,japanese teen facefuck,mom,kendra wilkinson,janine full movies,swaping arab"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 760], ["name", "syria"], ["searches", "arab,teen,father daughter,brother sister,grandpa fuck oldman,ava addmans,cam4,creamy squirt,audrey bitoni,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/il.png"], ["map_id", 376], ["name", "israel"], ["searches", "skinny,israeli,lesbian,israeli sex,prostate,mature fuck teen,piss,casting,rocco anal,arab sex"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 275], ["name", "palestinian territories"], ["searches", "omegle,julia ann,seth gamble,family,naomi cruise,elizabeth darling,daddy rape me,tucci flower,mira sunset,full movie"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 422], ["name", "lebanon"], ["searches", "teamskeet,sister,maid,pussy,anal,erotic massage,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 51], ["name", "armenia"], ["searches", "armenian,petro porno,russian mom,sister,amazonki,haykakan porno,jesika i monika,amateur,porno armenia,rachel steele"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/in.png"], ["map_id", 356], ["name", "india"], ["searches", "indian,sunny leone,indian aunty,indian actress,lisa ann,desi,mom,indian sex,indian wife,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 586], ["name", "pakistan"], ["searches", "pakistani,indian,beeg,sister,girls peeing in bed,mom,pakistan,russian,hislut com,havoc showing her"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 364], ["name", "iran"], ["searches", "pussy,massage,pornstar,blowjob,iranian,gang bang,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 4], ["name", "afghanistan"], ["searches", "pashto,paki,aunt,mature women,afghanian,afghan,dutch bitch,zahra,indian sex,sabrina big"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 398], ["name", "kazakhstan"], ["searches", "lesbian prison,lesbian mature,squirt machine,ultimate surrender,lesbian domination,russian maid,germangoogirl.com,kazhak,vintage,chechen"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/de.png"], ["map_id", 276], ["name", "germany"], ["searches", "german,deutsch,teen,anal,hentai,german amateur,milf,gina wild,casting,massage"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/fr.png"], ["map_id", 250], ["name", "france"], ["searches", "french,beurette,hentai,francaise,teen,amateur,anal,casting,french amateur,mature"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/nl.png"], ["map_id", 528], ["name", "netherlands"], ["searches", "dutch,teen,milf,massage,pov,casting,amateur,squirt,public,anal"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/be.png"], ["map_id", 56], ["name", "belgium"], ["searches", "french,teen,milf,amateur,casting,massage,belgium,lesbian,dutch,mom"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/at.png"], ["map_id", 40], ["name", "austria"], ["searches", "german,teen,milf,anal,deutsch,squirt,casting,amateur,piss,hentai"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ch.png"], ["map_id", 756], ["name", "switzerland"], ["searches", "swiss,swissfuckers,german,teen,french,anal,schweiz,casting,milf,massage"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/gb.png"], ["map_id", 826], ["name", "united_kingdom"], ["searches", "british,indian,milf,teen,lesbian,mature,pov,lisa ann,amateur,massage"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (43.4ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/se.png"], ["map_id", 752], ["name", "sweden"], ["searches", "swedish,anal,milf,teen,sweden,amateur,pov,mature,massage,mom"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/dk.png"], ["map_id", 208], ["name", "denmark"], ["searches", "danish,dansk,casting,denmark,teen,milf,massage,anal,hentai,public"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/no.png"], ["map_id", 578], ["name", "norway"], ["searches", "norwegian,norway,norsk,teen,milf,amateur,anal,massage,swedish,squirt"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/fi.png"], ["map_id", 246], ["name", "finland"], ["searches", "sex,public invasion,anal,teen girls,enema,gaping hole,busty teen,omegle,first,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ie.png"], ["map_id", 372], ["name", "ireland"], ["searches", "gangbang,drunk,irish,cap d agde,sex,ebony,mother,german femdom,teasing dick with pussy,tease"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["map_id", 352], ["name", "iceland"], ["searches", "bdsm,pump,thai massage,women wearing strapons,husband lets wife fuck his best friend,brutal,brest injection,fucked my friends mom,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/it.png"], ["map_id", 380], ["name", "italy"], ["searches", "italian,sara tommasi,amatoriale,italiana,milf,casting,mature,teen,italia,mom"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/es.png"], ["map_id", 724], ["name", "spain"], ["searches", "torbe,spanish,amateur,casting,teen,mature,cumlouder,compilation,milf,massage"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/gr.png"], ["map_id", 300], ["name", "greece"], ["searches", "greek,sirina,greece,milf,mom,casting,lisa ann,greek amateur,anal,teen"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ru.png"], ["map_id", 643], ["name", "russia"], ["searches", "russian,anal,teen,sasha grey,mature,compilation,russian teen,casting,russian mature,mom"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ua.png"], ["map_id", 804], ["name", "ukraine"], ["searches", "russian,sex,extreme,emo,gangbang vagina creampie,hard anal,femdome,futanaria,glory-hole,berkova"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/pl.png"], ["map_id", 616], ["name", "poland"], ["searches", "polish,podrywacze,poland,casting,public,teen,milf,czech,sasha grey,anal"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ro.png"], ["map_id", 642], ["name", "romania"], ["searches", "romanian,romania,slave,mom and son,mom,mom son,spy,young,russian,jodi west"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/cz.png"], ["map_id", 203], ["name", "czech_rep."], ["searches", "sestra,czech,fist ffm,defloration,teen,mature,sounding,babysitter anal,anal,"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/hu.png"], ["map_id", 348], ["name", "hungary"], ["searches", "facial,mom and son,mom son,enema,sex,fake agent,cuckold,fur coat,hairy,latex"], ["updated_at", Fri, 21 Feb 2014 20:29:37 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/us.png"], ["map_id", 840], ["name", "united_states"], ["searches", "teen,milf,college,creampie,massage,pov,asian,compilation,amateur,hentai"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[35m (63.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ca.png"], ["map_id", 124], ["name", "canada"], ["searches", "teen,asian,compilation,milf,pov,massage,hentai,creampie,anal,amateur"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/mx.png"], ["map_id", 484], ["name", "mexico"], ["searches", "mexico,teen,mexicana,mexicanas,lisa ann,milf,mom,hentai,brazzers,mexican"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/br.png"], ["map_id", 76], ["name", "brazil"], ["searches", "brasil,brazilian,novinha,anal,brazil,teen,brasileirinhas,julia paes,compilation,amateur"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/co.png"], ["map_id", 170], ["name", "colombia"], ["searches", "colombia,colombiana,colombian,esperanza gomez,teen,anal,colombianas,lesbian,paisa,medellin"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/ar.png"], ["map_id", 32], ["name", "argentina"], ["searches", "argentina,florencia,anal,teen,milf,amateur,hentai,brazzers,mature,lisa ann"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/pe.png"], ["map_id", 604], ["name", "peru"], ["searches", "sarah young,mature mom,peru,anal,drunk,hentai,taboo,convento,mature hairy creampie,don't tell mommy gia paloma"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "countries" ("created_at", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["map_id", 862], ["name", "venezuela"], ["searches", "public,teen,mature anal,daddy,virgin,nun,ariel x fart,cuckold,crazy brunette stacey,culioneros"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "countries" ("created_at", "flag_url", "map_id", "name", "searches", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00], ["flag_url", "http://flagpedia.net/data/flags/normal/cl.png"], ["map_id", 152], ["name", "chile"], ["searches", "public,upskirt,xxx,airplane,stewardess,argentina,pendeja,chile,dad,shoeplay"], ["updated_at", Fri, 21 Feb 2014 20:29:38 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCountry Load (3.8ms)[0m  [1mSELECT "countries".* FROM "countries" ORDER BY "countries"."id" ASC LIMIT 1[0m
