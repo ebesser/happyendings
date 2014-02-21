@@ -440,26 +440,23 @@ function ready(error, collection) {
       search_term_array = data[1].split(",")
       console.log(search_term_array)
 
-      var contents = $('<ol>');
+      var contents = $('<div>');
+      var search_terms_container = $('<ol id=search_terms_container>')
 
       search_term_array.forEach(function(search_term) {
         console.log(search_term)
-        contents.append($('<li id="searches">' + search_term + '</li>'))
-     });  
+        if (search_term === ""){
+          console.log("no term mothafkr")
+        } else {
+          search_terms_container.append($('<li id="searches">' + search_term + '</li>'))
+  
+        }
+             });  
 
-
-      // var $searches = $('<li id="searches">' + data[1] + '</li>');
-
-      
-      // for (var i=2; i < data.length; i++) {
-      //   var vid_div = $('<div>');
-      //   vid_div.attr('class', 'hovertip-div')
-      //   vid_div.append('<p class="embed-video-hovertip">' + '<p data-id="' + data[i][1] + '" src="' + data[i][0] + '"/></p></li>');
-      //   $hovertip_videos_container.append(vid_div);
-      // }
-      
       $header.append($title);
       contents.append($header);
+      contents.append(search_terms_container);
+
   
       return contents.html();
     }

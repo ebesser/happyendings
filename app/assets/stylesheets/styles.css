@@ -343,12 +343,16 @@ a.flex-prev {
   box-shadow: 0 0 5px #888;
 }
 
+#search_terms_container {
+  margin-top: 20px;
+}
+
 .hovertip {
   color: #fff; 
   background: #000; 
   padding: 10px;
   width: 410px;
-  height: 150px;
+  height: 370px;
   overflow: auto;
   border-radius: 4px; 
   position: absolute;
