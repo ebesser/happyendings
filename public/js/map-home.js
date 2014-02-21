@@ -46,6 +46,7 @@ function getAllCountryTopVids() {
       url: '/countries',
       dataType: 'json',
       success: function (data) {
+        console.log(data)
         countries_object = data;
       }
     });
@@ -435,16 +436,16 @@ function ready(error, collection) {
       var $header = $('<div>');
 
       var $title = $('<h2 id="hovertip-country-name">' + data[0] + '</h2>');
-      var $flag = $('<img>').attr('src', data[1]).attr('class', 'hovertip-country-flag');
-
+      // var $flag = $('<img>').attr('src', data[1]).attr('class', 'hovertip-country-flag');
+      var $flag = $('<p id="searches">' + data[1] + '</p>');
 
       var contents = $('<div>');
-      for (var i=2; i < data.length; i++) {
-        var vid_div = $('<div>');
-        vid_div.attr('class', 'hovertip-div')
-        vid_div.append('<a class="embed-video-hovertip">' + '<img data-id="' + data[i][1] + '" src="' + data[i][0] + '"/></a></li>');
-        $hovertip_videos_container.append(vid_div);
-      }
+      // for (var i=2; i < data.length; i++) {
+      //   var vid_div = $('<div>');
+      //   vid_div.attr('class', 'hovertip-div')
+      //   vid_div.append('<p class="embed-video-hovertip">' + '<p data-id="' + data[i][1] + '" src="' + data[i][0] + '"/></p></li>');
+      //   $hovertip_videos_container.append(vid_div);
+      // }
       
       $header.append($flag).append($title);
       contents.append($header);
@@ -576,7 +577,7 @@ $(function () {
 
     getAllCountryTopVids();
     var countries_object = "country";
-    antiGrav('#moon-man'); 
+    // antiGrav('#moon-man'); 
     addListener();
      
 });

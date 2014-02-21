@@ -7,6 +7,7 @@ def index
       h[country.map_id] = [
         country.name,
         country.searches,
+        country.map_id
       ]
     end
 
