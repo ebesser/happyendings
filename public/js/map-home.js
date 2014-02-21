@@ -32,7 +32,7 @@ var width = parseInt(d3.select('body').style('width')),
 
 var projection = d3.geo.orthographic()
   .translate([width / 2, height / 2])
-  .scale(340)
+  .scale(300)
   .precision(.1)
   .clipAngle(90)
 
@@ -460,7 +460,8 @@ function ready(error, collection) {
       var $header = $('<div>');
 
       var $title = $('<h2 id="hovertip-country-name">' + data[0] + '</h2>');
-      // var $flag = $('<img>').attr('src', data[1]).attr('class', 'hovertip-country-flag');
+      var $flag = $('<img>').attr('src', data[3]).attr('class', 'hovertip-country-flag');
+      console.log(data[3])
       search_term_array = data[1].split(",")
       console.log(search_term_array)
 
@@ -477,7 +478,7 @@ function ready(error, collection) {
         }
              });  
 
-      $header.append($title);
+      $header.append($flag).append($title);
       contents.append($header);
       contents.append(search_terms_container);
 
