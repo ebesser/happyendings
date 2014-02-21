@@ -5,12 +5,13 @@ body {
   margin: 0;
 }
 
-div#private-eye-icon{
-    
-  content:url("/spy-eye-400x441.png");
+/*div#private-eye-icon{
+content:url("/spyguy.png");
 z-index: 15;
+height: 50px;
+width: 50px;
 }
-
+*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -486,10 +487,10 @@ span.circles-text {
 #white_thingy {
   position: absolute;
   left: 0px;
-  top: 20px;
-  height: 60px;
+  top: 40px;
+  height: 100px;
   width: 300px;
-  background:url('/tag.png');
+  background: black;
   color: #fff;
   font-size: 42px;
   font-weight: bold;
@@ -497,14 +498,15 @@ span.circles-text {
 }
 
 #white-thingy-inside {
-  padding-right: 80px;
+  padding-right: 30px;
   padding-top: 15px;
+  line-height: 40px;
 }
 
 #explanatory_text_container {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 59px;
+  right: 40px;
   width: 325px;
   line-height: 26px;
 }
@@ -528,7 +530,7 @@ span.circles-text {
   width: 65px;
   margin:0 auto;
   position:absolute;
-  top: 20px;
+  top: 42px;
   left:25px;
 }
 
