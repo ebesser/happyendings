@@ -437,9 +437,20 @@ function ready(error, collection) {
 
       var $title = $('<h2 id="hovertip-country-name">' + data[0] + '</h2>');
       // var $flag = $('<img>').attr('src', data[1]).attr('class', 'hovertip-country-flag');
-      var $flag = $('<p id="searches">' + data[1] + '</p>');
+      search_term_array = data[1].split(",")
+      console.log(search_term_array)
 
-      var contents = $('<div>');
+      var contents = $('<ol>');
+
+      search_term_array.forEach(function(search_term) {
+        console.log(search_term)
+        contents.append($('<li id="searches">' + search_term + '</li>'))
+     });  
+
+
+      // var $searches = $('<li id="searches">' + data[1] + '</li>');
+
+      
       // for (var i=2; i < data.length; i++) {
       //   var vid_div = $('<div>');
       //   vid_div.attr('class', 'hovertip-div')
@@ -447,9 +458,9 @@ function ready(error, collection) {
       //   $hovertip_videos_container.append(vid_div);
       // }
       
-      $header.append($flag).append($title);
+      $header.append($title);
       contents.append($header);
-      contents.append($hovertip_videos_container);
+  
       return contents.html();
     }
   }
