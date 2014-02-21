@@ -32,7 +32,7 @@ var width = parseInt(d3.select('body').style('width')),
 
 var projection = d3.geo.orthographic()
   .translate([width / 2, height / 2])
-  .scale(300)
+  .scale(340)
   .precision(.1)
   .clipAngle(90)
 
